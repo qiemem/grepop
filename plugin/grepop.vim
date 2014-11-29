@@ -1,5 +1,6 @@
-nnoremap <leader>g :set operatorfunc=GrepOperator<CR>g@
-vnoremap <leader>g :<c-u>call GrepOperator(visualmode())<cr>
+" Add the following lines to your vimrc with whatever mappings you like
+" nnoremap <leader>g :set operatorfunc=GrepOperator<CR>g@
+" vnoremap <leader>g :<c-u>call GrepOperator(visualmode())<cr>
 function! GrepOperator(type)
     if a:type ==# 'v'
         execute "normal! `<v`>y"
